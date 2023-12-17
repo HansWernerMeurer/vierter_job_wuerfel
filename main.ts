@@ -6,7 +6,7 @@ function Bin_bereit () {
     music.playTone(330, music.beat(BeatFraction.Whole))
 }
 input.onGesture(Gesture.Shake, function () {
-    Zahl = randint(1, 3)
+    Zahl = randint(1, 6)
 })
 let Zahl = 0
 Bin_bereit()
@@ -15,13 +15,13 @@ basic.clearScreen()
 basic.forever(function () {
     while (Zahl == 1) {
         basic.showLeds(`
-            # . . . #
-            . # . # .
+            . . . . .
+            . . . . .
             . . # . .
-            . # . # .
+            . . . . .
             . . . . .
             `)
-        basic.pause(2000)
+        basic.pause(5000)
         basic.clearScreen()
         Zahl = 0
     }
@@ -29,13 +29,13 @@ basic.forever(function () {
 basic.forever(function () {
     while (Zahl == 2) {
         basic.showLeds(`
+            . . . . #
             . . . . .
-            . # # # .
-            . # # # .
-            . # # # .
             . . . . .
+            . . . . .
+            # . . . .
             `)
-        basic.pause(2000)
+        basic.pause(5000)
         basic.clearScreen()
         Zahl = 0
     }
@@ -43,13 +43,13 @@ basic.forever(function () {
 basic.forever(function () {
     while (Zahl == 3) {
         basic.showLeds(`
-            # # # # #
-            # . . . #
-            # . . . #
-            # . . . #
-            # # # # #
+            . . . . #
+            . . . . .
+            . . # . .
+            . . . . .
+            # . . . .
             `)
-        basic.pause(2000)
+        basic.pause(5000)
         basic.clearScreen()
         Zahl = 0
     }
