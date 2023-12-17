@@ -25,6 +25,9 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
+        basic.pause(5000)
+        basic.clearScreen()
+        Zahl = 0
     }
 })
 basic.forever(function () {
@@ -36,6 +39,9 @@ basic.forever(function () {
             . . . . .
             # . . . .
             `)
+        basic.pause(5000)
+        basic.clearScreen()
+        Zahl = 0
     }
 })
 basic.forever(function () {
@@ -47,6 +53,9 @@ basic.forever(function () {
             . . . . .
             # . . . .
             `)
+        basic.pause(5000)
+        basic.clearScreen()
+        Zahl = 0
     }
 })
 basic.forever(function () {
@@ -58,6 +67,9 @@ basic.forever(function () {
             . . . . .
             # . . . #
             `)
+        basic.pause(5000)
+        basic.clearScreen()
+        Zahl = 0
     }
 })
 basic.forever(function () {
@@ -69,6 +81,9 @@ basic.forever(function () {
             . . . . .
             # . . . #
             `)
+        basic.pause(5000)
+        basic.clearScreen()
+        Zahl = 0
     }
 })
 basic.forever(function () {
@@ -80,5 +95,8 @@ basic.forever(function () {
             . . . . .
             # . . . #
             `)
+        basic.pause(5000)
+        basic.clearScreen()
+        Zahl = 0
     }
 })
