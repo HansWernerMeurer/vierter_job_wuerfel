@@ -1,16 +1,12 @@
 function Bin_bereit () {
-    music.playTone(392, music.beat(BeatFraction.Eighth))
-    music.rest(music.beat(BeatFraction.Eighth))
-    music.playTone(330, music.beat(BeatFraction.Eighth))
-    music.rest(music.beat(BeatFraction.Eighth))
-    music.playTone(349, music.beat(BeatFraction.Eighth))
-    music.rest(music.beat(BeatFraction.Eighth))
-    music.playTone(294, music.beat(BeatFraction.Eighth))
-    music.rest(music.beat(BeatFraction.Eighth))
-    music.playTone(262, music.beat(BeatFraction.Whole))
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(330, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(330, music.beat(BeatFraction.Whole))
 }
 input.onGesture(Gesture.Shake, function () {
-    Zahl = randint(1, 6)
+    Zahl = randint(1, 3)
 })
 let Zahl = 0
 Bin_bereit()
@@ -19,13 +15,13 @@ basic.clearScreen()
 basic.forever(function () {
     while (Zahl == 1) {
         basic.showLeds(`
-            . . . . .
-            . . . . .
+            # . . . #
+            . # . # .
             . . # . .
-            . . . . .
+            . # . # .
             . . . . .
             `)
-        basic.pause(5000)
+        basic.pause(2000)
         basic.clearScreen()
         Zahl = 0
     }
@@ -33,13 +29,13 @@ basic.forever(function () {
 basic.forever(function () {
     while (Zahl == 2) {
         basic.showLeds(`
-            . . . . #
             . . . . .
+            . # # # .
+            . # # # .
+            . # # # .
             . . . . .
-            . . . . .
-            # . . . .
             `)
-        basic.pause(5000)
+        basic.pause(2000)
         basic.clearScreen()
         Zahl = 0
     }
@@ -47,13 +43,13 @@ basic.forever(function () {
 basic.forever(function () {
     while (Zahl == 3) {
         basic.showLeds(`
-            . . . . #
-            . . . . .
-            . . # . .
-            . . . . .
-            # . . . .
+            # # # # #
+            # . . . #
+            # . . . #
+            # . . . #
+            # # # # #
             `)
-        basic.pause(5000)
+        basic.pause(2000)
         basic.clearScreen()
         Zahl = 0
     }
