@@ -3,7 +3,11 @@ function Bin_bereit () {
     music.rest(music.beat(BeatFraction.Quarter))
     music.playTone(330, music.beat(BeatFraction.Quarter))
     music.rest(music.beat(BeatFraction.Quarter))
-    music.playTone(330, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(294, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(262, music.beat(BeatFraction.Whole))
 }
 input.onGesture(Gesture.Shake, function () {
     Zahl = randint(1, 6)
